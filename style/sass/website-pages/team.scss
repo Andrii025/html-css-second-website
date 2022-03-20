@@ -1,0 +1,77 @@
+.team{
+background-color: $cteam;
+padding: 90px 0;
+    & .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .team-title{
+            font-family: $ffm;
+            font-size: 23px;
+            text-transform: $ttu;
+            &:after{
+                content: "";
+                display: block;
+                height: 2px;
+                width: 80px;
+                margin: 40px auto 40px;
+                background-color: $cgray;
+            }
+        }
+        & .team-items{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            & .team-item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: (100% - 6.383%)/4;
+                & img{
+                    max-width: 220px;
+                    width: 100%;
+                }
+                &:first-child{
+                    padding-left: 0px;
+                }
+                &:last-child{
+                    padding-right: 0px;
+                }
+                & h1{
+                    font-family: $ffm;
+                    font-size: 16px;
+                    text-transform: $ttu;
+                    padding: 25px 0 15px 0;
+                }
+                & p{
+                    font-family: $ffv;
+                    font-size: 14px;
+                    padding-bottom: 35px;
+                }
+                & .team-icons{
+                    display: flex;
+                    flex-direction: row;
+                    & .icon{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                        background-color: $cgray;
+                        margin: 0 2.5px;
+                        transition: .3s ease-in-out; 
+                        & i{
+                            font-size: 14px;
+                            line-height: 1;
+                            color: $icon;
+                            &:hover{
+                                color: $iconh;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

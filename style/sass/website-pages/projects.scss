@@ -1,0 +1,54 @@
+.projects{
+    background-color: $cgray;
+    padding: 90px 0 90px 0;
+    & .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .project-title{
+            font-family: $ffm;
+            font-size: 23px;
+            text-transform: $ttu;
+            &:after{
+                content: '';
+                display: block;
+                width: 80px;
+                height: 2px;
+                margin: 40px auto 40px;
+                background-color: $cstronggray;  
+            }
+        }
+        & .project-items{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            & .project-item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: (100% - 4.255%)/3;
+                margin-bottom: 20px;
+                background-color: $cphoto;
+                & img{
+                    max-width: 300px;
+                    width: 100%;
+                }
+                & h1{
+                    text-align: center;
+                    font-family: $ffm;
+                    font-size: 16px;
+                    text-transform: $ttu;
+                    color: $cd;
+                    padding: 25px 0 15px 0;
+                }           
+                & p{
+                    text-align: center;
+                    font-family: $ffv;
+                    font-size: 14px;
+                    color: $cd;
+                    padding-bottom: 20px;
+                }        
+            }
+        }
+    }
+}

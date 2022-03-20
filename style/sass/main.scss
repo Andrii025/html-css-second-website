@@ -1,0 +1,18 @@
+@import "reset.scss";
+@import "fonts.scss";
+@import "var.scss";
+@import "nav.scss";
+@import "intro.scss";
+@import "brand.scss";
+@import "projects.scss";
+@import "team";
+@import "review.scss";
+@import "touch";
+@import "message.scss";
+@import "media.scss";
+
+.container{
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

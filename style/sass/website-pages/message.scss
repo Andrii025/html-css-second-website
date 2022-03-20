@@ -1,0 +1,79 @@
+.message{
+    background-color: $cmessb;
+    padding: 70px 0;
+    & .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .message-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: (564/940)*100%;
+            width: 100%;
+            & .input-name, .input-email, .input-budget{
+                position: relative;
+                height: 57px;
+                width: 100%;
+                & .name, .email, .budget{
+                    position: absolute;
+                    top: 20px;
+                    left: 30px;
+                }
+            }
+            & input{
+                background-color: rgba(255, 255, 255, 0.18);
+                height: 57px;
+                width: 100%;
+                padding-left: 100px;
+                transition: .3s ease-in-out;
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.25);
+                }
+            }
+            & label, input{
+                color: $cmesslab;
+                font-family: $ffv;
+                font-size: 17px;
+                font-style: italic;
+            }
+            & .input-describe{
+                position: relative;
+                height: 57px*2;
+                width: 100%;
+                margin-bottom: 25px;
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.25);
+                }
+                &::placeholder{
+                    position: absolute;
+                    top: 20px;
+                    left: 30px;
+                    color: $cmesslab;
+                    font-family: $ffv;
+                    font-size: 17px;
+                    font-style: italic;
+                }
+            }
+        }
+        & button{
+            height: 53px;
+            width: 210px;
+            border: 1px solid $cmessbtn;
+            text-transform: capitalize;
+            font-size: 17px;
+            font-style: italic;
+            font-family: $ffv;
+            color: $cmessbtntxt;
+            background-color: $cmessb;
+            margin-bottom: 35px;
+        }
+        & p{
+            font-size: 15px;
+            font-family: $ffv;
+            color: $cmesslab;
+            opacity: 0.4;
+            margin-top: 18px;
+        }
+    }
+}

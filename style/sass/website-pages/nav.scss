@@ -1,0 +1,54 @@
+@import "fonts.scss";
+@import "var.scss";
+
+
+nav{
+    padding: 18px 0px;
+    .nav-navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav-logo{
+            display: flex;
+            align-items: center;
+            & img{
+                padding-right: 20px;
+            }
+            & p{
+                font-family: $ffo;
+                text-transform: $ttu;
+                font-size: 22px;
+                font-weight: 400;
+            }
+        }
+        .nav-items a{
+            position: relative;
+            font-family: $ffm;
+            text-transform: $ttu;
+            margin: 0 17px;
+            color: $cd;
+            font-size: 12px;
+            font-weight: 400;
+            &:last-child{
+                margin-right: 10px;
+            }
+            &:before{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 2px;
+                width: 100%;
+                background-color: #000;
+                transition: .3s ease-in-out;
+                transform: scaleX(0);
+            }
+            &:hover:before{
+                transform: scale(1);
+            }
+        }
+        & .nav-menu{
+            display: none;
+        }
+    }
+}

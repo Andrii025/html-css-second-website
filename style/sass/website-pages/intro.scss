@@ -1,0 +1,74 @@
+.obsession{
+    background: url(/images/obsession.jpg) center no-repeat;
+    background-size: cover;
+}
+.obsession-container{
+    padding: 100px 0;
+    width: 100%;
+    max-width: 670px;
+    margin: 0 auto;
+    & .intro-title {
+        font-family: $ffm;
+        color: $cintro;
+        font-size: 44px;
+        line-height: 1.1;
+        text-transform: $ttu;
+        text-align: center;
+        &:after{
+            content: '';
+            display: block;
+            width: 80px;
+            height: 2px;
+            margin: 40px auto 30px;
+            background-color: $cintro;            
+        }
+    }
+    & .intro-subtitle{
+        font-family: $ffv;
+        color: $cintro;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+.description{
+    background-color: $cdescr;
+}
+.description .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    position: relative;
+    &:before, &:after{
+        position: absolute;
+        content: '';
+        display: block;
+        top: 0;
+        width: 75px;
+        height: 3px;
+        background-color: $cd;
+        margin: 0 auto;
+    }
+    &:before{
+        transform: rotate(45deg);
+    }
+    &:after{
+        transform: rotate(-45deg);
+    }
+    & .description-text{
+        padding: 0 20px;
+        font-family: $ffv;
+        font-size: 18px;
+        line-height: 1.4;
+        text-align: center;
+    }
+    & button{
+        margin-top: 40px;
+        width: 160px;
+        height: 53px;
+        border: 1px solid $cd;
+        background-color: $cdescr;
+        font-size: 16px;
+        font-family: $ffv;
+    }
+}
